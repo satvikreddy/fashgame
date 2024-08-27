@@ -84,7 +84,10 @@ const HigherLowerPlayer = ({
           currentStreak: streak,
           bestScore,
           config,
-          leaderboard: {} as any,
+          leaderboard: {
+            ownerName: "",
+            scores: [],
+          },
           onSeeProductLinks: () => {
             setDrawerOpen(true);
           },
